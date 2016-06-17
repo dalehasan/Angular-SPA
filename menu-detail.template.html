@@ -1,0 +1,13 @@
+
+<div>
+    <h2>Detail</h2><br/>
+    Name: {{$ctrl.menu.name}} <br />
+    Calories: {{$ctrl.menu.calories}}<br />
+    Rating: {{$ctrl.menu.rating}}<br />
+    <img alt="{{$ctrl.menu.name}}" class="imgThumbnail" src="../menu-detail/json/{{$ctrl.menu.img}}" />
+
+    <br/><br />
+    <a ng-href="#/{{$ctrl.menu.category}}"><span class="glyphicon glyphicon-arrow-left" style="font-size:2em;"></span></a>
+
+</div>
+
