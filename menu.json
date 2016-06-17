@@ -1,0 +1,77 @@
+﻿{
+    "records": [
+        {
+            "category": "appetizer",
+            "id": "1",
+            "name": "pancake",
+            "img": "1.jpg",
+            "calories": 430,
+            "rating": 4.3
+        },
+        {
+            "category": "appetizer",
+            "id": "2",
+            "name": "fried banana",
+            "img": "2.jpg",
+            "calories": 280,
+            "rating": 5
+        },
+        {
+            "category": "appetizer",
+            "id": "3",
+            "name": "croissant",
+            "img": "3.jpg",
+            "calories": 670,
+            "rating": 3.9
+        },
+
+        {
+            "category": "entree",
+            "id": "4",
+            "name": "egg salad",
+            "img": "4.jpg",
+            "calories": 730,
+            "rating": 4.3
+        },
+        {
+            "category": "entree",
+            "id": "5",
+            "name": "steak and fries",
+            "img": "5.jpg",
+            "calories":1080,
+            "rating": 5
+        },
+        {
+            "category": "entree",
+            "id": "6",
+            "name": "chicken pasta",
+            "img": "6.jpg",
+            "calories": 970,
+            "rating": 3.9
+        },
+        {
+            "category": "dessert",
+            "id": "7",
+            "name": "fruits cup",
+            "img": "7.jpg",
+            "calories": 330,
+            "rating": 2.8
+        },
+        {
+            "category": "dessert",
+            "id": "8",
+            "name": "chocolate mousse",
+            "img": "8.jpg",
+            "calories": 680,
+            "rating": 5
+        },
+        {
+            "category": "dessert",
+            "id": "9",
+            "name": "bread pudding",
+            "img": "9.jpg",
+            "calories": 670,
+            "rating": 3.7
+        }
+    ]
+}

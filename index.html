@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+
+    <script src="menu-detail/menu-detail.module.js"></script>
+    <script src="menu-detail/menu-detail.component.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" /> 
+    <title></title>
+</head>
+<body>
+<div  class="container" ng-app="myApp" ng-controller="myCtrl">   
+
+<header>
+        <div id="outside" class="flex-container">
+            <div class="flex-item itemAll">
+                <h1>Our Menu</h1>
+                <em>Single Page Application using ASP.Net, AngularJS, and FlexBox CSS3</em>
+            </div>
+        </div>
+</header>
+
+
+<section>
+        <!--Flexbox Container-->
+        <div class="flex-container">
+            <!--col 1-->
+            <div class="flex-item item1">
+                <h2>All Menu</h2>
+                <p><input type="text" ng-model="menuAll"></p>
+                <ul>
+                    <li class="myAnimation" ng-repeat="x in data | filter:menuAll ">
+                        <a href="#/menu-detail/{{x.id}}">{{x.name}}</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--col 2-->
+            <div class="flex-item item2">
+                <h2>Category</h2>
+                <ul>
+                    <li ng-repeat="cat in data | unique:'category'">
+                        <a ng-href="#/{{cat.category}}">{{cat.category}}</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--col 3-->
+            <div class="flex-item item3">
+                <div ng-view class="myAnimation"></div>
+            </div>
+
+            <!--end of container-->
+        </div>
+</section>
+
+ <footer>
+        <div class="flex-container">
+            <div class="flex-item itemAll">
+                <a href="http://www.HidayatHasan.net" target="_blank">Copyright © 2016 HidayatHasan.net</a>
+            </div>
+        </div>
+</footer>
+
+
+</div>
+
+
+</body>
+</html>
